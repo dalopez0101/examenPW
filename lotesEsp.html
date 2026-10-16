@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muebleria San Miguel</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow py-3">
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center gap-3 fw-bold"
+                href="index.html">
+
+                    <img
+                        src="https://muebleriaelements.com/assets/uploads/images/Salas/GRUPO-2PC-U1294V-GRY/Sala%20U1294V.jpg"
+                        alt="Muebles San Miguel"
+                        width="65"
+                        height="55"
+                        class="rounded object-fit-cover">
+
+                    <span class="fs-5">
+                        Mueblería San Miguel
+                        <small class="d-block text-warning fw-normal">
+                            Fabricamos tus muebles soñados
+                        </small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mt-3 mt-lg-0">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="catalogo.html" class="nav-link">
+                                Catálogo
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="lotesEsp.html" class="nav-link active">
+                                Cotizaciones
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="fTecnicas.html" class="nav-link">
+                                Fichas técnicas
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="requisitos.html" class="nav-link">
+                                Contacto y licitaciones
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <main class="container">
+
+            <div class="text-center mb-4">
+                <h2 class="titulo-principal">Cotizaciones institucionales</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Formulario -->
+                <div class="col-12 col-lg-7">
+
+                    <section class="panel-cotizacion">
+
+                        <form id="formCotizacion">
+
+                            <!-- lotes -->
+                            <fieldset>
+                                <legend>
+                                    <i class="bi bi-box-seam"></i>
+                                    Configuración del lote
+                                </legend>
+
+                                <div class="mb-3">
+                                    <label for="producto" class="form-label">
+                                        Tipo de mueble
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        id="producto"
+                                        name="producto"
+                                        required>
+
+                                        <option value="">
+                                            Seleccione un producto
+                                        </option>
+
+                                        <option value="1290">
+                                            Pupitre universitario — L 1,290
+                                        </option>
+
+                                        <option value="4800">
+                                            Silla ergonómica — L 4,800
+                                        </option>
+
+                                        <option value="24500">
+                                            Escritorio ejecutivo de caoba — L 24,500
+                                        </option>
+
+                                        <option value="39900">
+                                            Mesa de directorio — L 39,900
+                                        </option>
+
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="cantidad" class="form-label">
+                                        Cantidad de piezas a cotizar
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="cantidad"
+                                        name="cantidad"
+                                        min="1"
+                                        max="10000"
+                                        step="1"
+                                        value="1"
+                                        required>
+
+                                    <div class="form-text">
+                                        Ingrese la cantidad total de muebles
+                                        que desea comprar.
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <!-- Destino y flete -->
+                            <fieldset>
+                                <legend>
+                                    <i class="bi bi-truck"></i>
+                                    Destino y flete
+                                </legend>
+
+                                <div class="mb-3">
+                                    <label for="destino" class="form-label">
+                                        Sector de entrega
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        id="destino"
+                                        name="destino"
+                                        required>
+
+                                        <option value="300">
+                                            Siguatepeque / Comayagua — Flete L 300
+                                        </option>
+
+                                        <option value="1000">
+                                            Tegucigalpa / San Pedro Sula — Flete L 1,000
+                                        </option>
+
+                                        <option value="3500">
+                                            Roatán / Islas de la Bahía — Flete L 3,500
+                                        </option>
+
+                                    </select>
+                                </div>
+
+                                <p class="text-muted small mb-0">
+                                    <i class="bi bi-info-circle"></i>
+                                    El flete se suma una sola vez al pedido total.
+                                </p>
+                            </fieldset>
+
+                            <!-- Política de descuentos -->
+                            <div class="politica-descuento">
+
+                                <h3>
+                                    <i class="bi bi-patch-check-fill"></i>
+                                    Beneficio institucional
+                                </h3>
+
+                                <p class="mb-1">
+                                    <strong>12 % de descuento</strong>
+                                    a partir de 10 piezas.
+                                </p>
+
+                                <p class="mb-0 small">
+                                    El descuento se aplica al subtotal de los
+                                    muebles antes de agregar el flete.
+                                </p>
+
+                            </div>
+
+                            <!-- Botón de cálculo -->
+                            <button type="submit" class="btn-calcular">
+                                <i class="bi bi-calculator-fill"></i>
+                                Calcular presupuesto
+                            </button>
+
+                        </form>
+
+                    </section>
+                </div>
+
+                <!-- Panel de resultados -->
+                <div class="col-12 col-lg-5">
+
+                    <section class="panel-resultado">
+
+                        <h2>
+                            <i class="bi bi-receipt"></i>
+                            Resultado del presupuesto
+                        </h2>
+
+                        <p class="text-light">
+                            Resumen estimado de tu pedido:
+                        </p>
+
+                        <div
+                            id="resultado"
+                            class="resultado-consola"
+                            aria-live="polite"
+                            role="status">MUEBLERÍA SAN MIGUEL
+    ------------------------------
+    Esperando datos del pedido...
+
+    Seleccione un mueble, indique la
+    cantidad y presione el botón
+    "Calcular presupuesto".</div>
+                    </section>
+
+                </div>
+
+            </div>
+        </main>
+
+
+
+        <footer class="bg-dark text-white pt-5 pb-3">
+            <h2 class="h5 fw-bold text-warning">informacion de contacto</h2>
+
+            <p class="text-white-50 mb-2">
+                ubicacion:
+                <strong class="text-white">km 114 Carretera CA-5, Siguatepeque</strong>
+            </p>
+            <p>
+                Tel:
+                <strong>12345678</strong>
+            </p>
+            <p>
+                &copy; 2026 muebleria san miguel
+                todos los derechos reservados
+            </p>
+
+            <h3>Redes Sociales</h3>
+
+            <ul>
+                <li>
+                    <a href="https://mueblessanmiguel@carpinteria.hn">mueblessanmiguel@carpinteria.hn</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/50411223344">
+                    WhatsApp</a>
+                </li>
+            </ul>
+        </footer>
+
+            <!-- JavaScript de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Lógica del presupuesto -->
+        <script>
+            const formulario = document.getElementById("formCotizacion");
+            const resultado = document.getElementById("resultado");
+
+            const campoProducto = document.getElementById("producto");
+            const campoCantidad = document.getElementById("cantidad");
+            const campoDestino = document.getElementById("destino");
+
+            const formatoLempiras = new Intl.NumberFormat("es-HN", {
+                maximumFractionDigits: 2
+            });
+
+            function lempiras(cantidad) {
+                return "L " + formatoLempiras.format(cantidad);
+            }
+
+            formulario.addEventListener("submit", function (evento) {
+                evento.preventDefault();
+
+                // Validar los campos del formulario
+                if (!formulario.checkValidity()) {
+                    formulario.reportValidity();
+                    return;
+                }
+
+                const precioUnitario = Number(campoProducto.value);
+                const cantidad = Number(campoCantidad.value);
+                const flete = Number(campoDestino.value);
+
+                if (
+                    !Number.isSafeInteger(cantidad) ||
+                    cantidad < 1 ||
+                    cantidad > 10000 ||
+                    !Number.isFinite(precioUnitario) ||
+                    precioUnitario <= 0
+                ) {
+                    alert("Verifique el producto y la cantidad ingresada.");
+                    return;
+                }
+
+                // Obtener el nombre del producto seleccionado
+                const nombreProducto =
+                    campoProducto.options[campoProducto.selectedIndex].text
+                        .split(" — ")[0];
+
+                // Calcular subtotal
+                const subtotal = precioUnitario * cantidad;
+
+                // Aplicar descuento institucional desde 10 piezas
+                const porcentajeDescuento = cantidad >= 10 ? 0.12 : 0;
+                const descuento = subtotal * porcentajeDescuento;
+
+                // Calcular el total incluyendo el flete
+                const total = subtotal - descuento + flete;
+
+                const nombreDestino =
+                    campoDestino.options[campoDestino.selectedIndex].text
+                        .split(" — ")[0];
+
+                // Mostrar presupuesto
+                resultado.innerHTML = `
+    MUEBLERÍA SAN MIGUEL
+    ================================
+
+    PRODUCTO: ${nombreProducto}
+    CANTIDAD: ${cantidad} piezas
+    PRECIO UNITARIO: ${lempiras(precioUnitario)}
+
+    --------------------------------
+    SUBTOTAL: ${lempiras(subtotal)}
+    DESCUENTO: ${lempiras(descuento)}
+    DESCUENTO APLICADO: ${porcentajeDescuento * 100}%
+
+    DESTINO: ${nombreDestino}
+    FLETE: ${lempiras(flete)}
+
+    ================================
+    TOTAL ESTIMADO:
+    <span class="total-final">${lempiras(total)}</span>
+    ================================
+
+    El costo estimado de su pedido
+    es ${lempiras(total)}.
+                `;
+
+            });
+        </script>
+
+    </body>
+
+</html>

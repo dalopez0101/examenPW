@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muebleria San Miguel</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow py-3">
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center gap-3 fw-bold"
+                href="index.html">
+
+                    <img
+                        src="https://muebleriaelements.com/assets/uploads/images/Salas/GRUPO-2PC-U1294V-GRY/Sala%20U1294V.jpg"
+                        alt="Muebles San Miguel"
+                        width="65"
+                        height="55"
+                        class="rounded object-fit-cover">
+
+                    <span class="fs-5">
+                        Mueblería San Miguel
+                        <small class="d-block text-warning fw-normal">
+                            Fabricamos tus muebles soñados
+                        </small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mt-3 mt-lg-0">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="catalogo.html" class="nav-link">
+                                Catálogo
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="lotesEsp.html" class="nav-link">
+                                Cotizaciones
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="fTecnicas.html" class="nav-link">
+                                Fichas técnicas
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="requisitos.html" class="nav-link active">
+                                Contacto y licitaciones
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- main -->
+        <main class="container">
+
+            <div class="text-center mb-4">
+                <h1 class="titulo">Solicitud de cotización formal</h1>
+
+                <p class="text-muted">
+                    Complete sus datos institucionales para solicitar
+                    una cotización de mobiliario.
+                </p>
+            </div>
+
+            <div class="formulario">
+
+                <form action="formulario.php" method="post" id="formCotizacion">
+
+                    <!-- Datos del solicitante -->
+                    <fieldset>
+                        <legend>
+                            <i class="bi bi-building"></i>
+                            Datos del solicitante
+                        </legend>
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">
+                                Nombre del solicitante
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Nombre completo"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="rtn" class="form-label">
+                                RTN institucional (14 dígitos)
+                            </label>
+
+                            <input type="text" class="form-control" id="rtn" name="rtn" placeholder="Ej. 08011999123456" 
+                            inputmode="numeric" pattern="[0-9]{14}" minlength="14" maxlength="14" 
+                            title="El RTN debe contener exactamente 14 dígitos numéricos." required>
+
+                            <div class="form-text">
+                                Ingrese los 14 números sin espacios ni guiones.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">
+                                Correo institucional
+                            </label>
+
+                            <input type="email" class="form-control" id="correo" name="correo" 
+                            placeholder="nombre@institucion.hn" autocomplete="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">
+                                Teléfono de contacto
+                            </label>
+
+                            <input type="tel" class="form-control" id="telefono" name="telefono" 
+                            placeholder="Ingrese su teléfono" autocomplete="tel" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="departamento" class="form-label">
+                                Departamento de entrega
+                            </label>
+
+                            <select class="form-select" id="departamento" name="departamento" required>
+
+                                <option value="">Seleccione un departamento</option>
+                                <option value="Atlántida">Atlántida</option>
+                                <option value="Choluteca">Choluteca</option>
+                                <option value="Colón">Colón</option>
+                                <option value="Comayagua">Comayagua</option>
+                                <option value="Copán">Copán</option>
+                                <option value="Cortés">Cortés</option>
+                                <option value="El Paraíso">El Paraíso</option>
+                                <option value="Francisco Morazán">Francisco Morazán</option>
+                                <option value="Gracias a Dios">Gracias a Dios</option>
+                                <option value="Intibucá">Intibucá</option>
+                                <option value="Islas de la Bahía">Islas de la Bahía</option>
+                                <option value="La Paz">La Paz</option>
+                                <option value="Lempira">Lempira</option>
+                                <option value="Ocotepeque">Ocotepeque</option>
+                                <option value="Olancho">Olancho</option>
+                                <option value="Santa Bárbara">Santa Bárbara</option>
+                                <option value="Valle">Valle</option>
+                                <option value="Yoro">Yoro</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- Información del pedido -->
+                    <fieldset>
+                        <legend>
+                            <i class="bi bi-box-seam"></i>
+                            Datos de la cotización
+                        </legend>
+
+                        <div class="mb-3">
+                            <label for="lote" class="form-label">
+                                Tipo de mobiliario
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="lote"
+                                name="loteId"
+                                required>
+
+                                <option value="">Seleccione un producto</option>
+
+                                <option value="pupitreUniversitario">
+                                    Pupitre universitario — L 1,290
+                                </option>
+
+                                <option value="sillaErg">
+                                    Silla ergonómica — L 4,800
+                                </option>
+
+                                <option value="escritorioEjecutivo">
+                                    Escritorio ejecutivo de caoba — L 24,500
+                                </option>
+
+                                <option value="mesaDirectorio">
+                                    Mesa de directorio — L 39,900
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cantidad" class="form-label">
+                                Cantidad de piezas
+                            </label>
+
+                            <input type="number" class="form-control" id="cantidad" 
+                            name="cantidad" min="1" step="1" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="destino" class="form-label">
+                                Destino y flete
+                            </label>
+
+                            <select class="form-select" id="destino" name="destino" required>
+
+                                <option value="">Seleccione el destino</option>
+
+                                <option value="300">
+                                    Siguatepeque / Comayagua — L 300
+                                </option>
+
+                                <option value="1000">
+                                    Tegucigalpa / San Pedro Sula — L 1,000
+                                </option>
+
+                                <option value="3500">
+                                    Roatán / Islas de la Bahía — L 3,500
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="aviso">
+                            <strong>
+                                <i class="bi bi-tags-fill"></i>
+                                Descuento institucional del 12 %
+                            </strong>
+
+                            <p class="mb-0 mt-1">
+                                Disponible para pedidos de 10 piezas o más.
+                            </p>
+                        </div>
+                    </fieldset>
+
+                    <!-- Aceptación de garantía -->
+                    <div class="garantia mb-4">
+
+                        <h3>
+                            <i class="bi bi-shield-check"></i>
+                            Garantía forestal de 5 años
+                        </h3>
+
+                        <p>
+                            Declaro que he leído y acepto los términos y
+                            condiciones de la garantía forestal de cinco años
+                            aplicable al mobiliario, conforme a las condiciones
+                            y exclusiones establecidas por la empresa.
+                        </p>
+
+                        <div class="form-check">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="garantia"
+                                name="acepta_garantia"
+                                value="si"
+                                required>
+
+                            <label class="form-check-label" for="garantia">
+                                Acepto los términos de la garantía forestal
+                                de 5 años.
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+
+                        <button
+                            type="submit"
+                            class="btn btn-enviar btn-lg flex-fill">
+
+                            <i class="bi bi-send-fill"></i>
+                            Enviar cotización
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="btn btn-outline-secondary btn-lg flex-fill">
+
+                            <i class="bi bi-eraser"></i>
+                            Limpiar formulario
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        
+        <footer class="bg-dark text-white pt-5 pb-3">
+            <h2 class="h5 fw-bold text-warning">informacion de contacto</h2>
+
+            <p class="text-white-50 mb-2">
+                ubicacion:
+                <strong class="text-white">km 114 Carretera CA-5, Siguatepeque</strong>
+            </p>
+            <p>
+                Tel:
+                <strong>12345678</strong>
+            </p>
+            <p>
+                &copy; 2026 muebleria san miguel
+                todos los derechos reservados
+            </p>
+
+            <h3>Redes Sociales</h3>
+
+            <ul>
+                <li>
+                    <a href="https://mueblessanmiguel@carpinteria.hn">mueblessanmiguel@carpinteria.hn</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/50411223344">
+                    WhatsApp</a>
+                </li>
+            </ul>
+        </footer>
+
+            <!-- JavaScript de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>

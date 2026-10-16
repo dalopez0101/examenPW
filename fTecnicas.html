@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muebleria San Miguel</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow py-3">
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center gap-3 fw-bold"
+                href="index.html">
+
+                    <img
+                        src="https://muebleriaelements.com/assets/uploads/images/Salas/GRUPO-2PC-U1294V-GRY/Sala%20U1294V.jpg"
+                        alt="Muebles San Miguel"
+                        width="65"
+                        height="55"
+                        class="rounded object-fit-cover">
+
+                    <span class="fs-5">
+                        Mueblería San Miguel
+                        <small class="d-block text-warning fw-normal">
+                            Fabricamos tus muebles soñados
+                        </small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mt-3 mt-lg-0">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="catalogo.html" class="nav-link">
+                                Catálogo
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="lotesEsp.html" class="nav-link">
+                                Cotizaciones
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="fTecnicas.html" class="nav-link active">
+                                Fichas técnicas
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="requisitos.html" class="nav-link">
+                                Contacto y licitaciones
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- main -->
+        <main class="container">
+
+            <section>
+                <h2 class="titulo-seccion">
+                    <i class="bi bi-table"></i>
+                    Tabla comparativa de líneas de mobiliario y certificacion forestal
+                </h2>
+
+                <p>
+                    Compara las características técnicas de nuestras principales
+                    líneas de muebles, las especies de madera utilizadas,
+                    su humedad de fabricación y sus características ambientales.
+                </p>
+
+                <!-- tablas-->
+                <div class="contenedor-tabla">
+
+                    <table class="table table-bordered tabla-muebles">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Línea de mueble</th>
+                                <th scope="col">Especie forestal</th>
+                                <th scope="col">Humedad en horno (%)</th>
+                                <th scope="col">Resistencia mecánica</th>
+                                <th scope="col">Certificación ambiental</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="codigo">EJE-001</td>
+                                <td>Escritorios ejecutivos</td>
+                                <td>Caoba</td>
+                                <td>8–12 %</td>
+                                <td>Alta</td>
+                                <td>Por verificar según proveedor</td>
+                            </tr>
+
+                            <tr>
+                                <td class="codigo">AUL-002</td>
+                                <td>Pupitres universitarios</td>
+                                <td>Pino</td>
+                                <td>8–12 %</td>
+                                <td>Media-alta</td>
+                                <td>Por verificar según proveedor</td>
+                            </tr>
+
+                            <tr>
+                                <td class="codigo">HOT-003</td>
+                                <td>Mobiliario para hotelería</td>
+                                <td>Laurel</td>
+                                <td>8–12 %</td>
+                                <td>Media-alta</td>
+                                <td>Por verificar según proveedor</td>
+                            </tr>
+
+                            <tr>
+                                <td class="codigo">ARC-004</td>
+                                <td>Archivadores y estanterías</td>
+                                <td>Pino y tablero MDF</td>
+                                <td>Según especificación del material</td>
+                                <td>Media-alta</td>
+                                <td>Por verificar según proveedor</td>
+                            </tr>
+
+                            <tr>
+                                <td class="codigo">DIR-005</td>
+                                <td>Mesas de directorio</td>
+                                <td>Roble</td>
+                                <td>8–12 %</td>
+                                <td>Alta</td>
+                                <td>Por verificar según proveedor</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="nota">
+                    <strong>
+                        <i class="bi bi-info-circle-fill"></i>
+                        Nota técnica:
+                    </strong>
+
+                    Los valores de humedad y resistencia son referenciales.
+                    Deben validarse según la especie, el espesor, el proceso
+                    de secado y las especificaciones de cada fabricante.
+                    Las certificaciones ambientales deben confirmarse mediante
+                    documentación del proveedor.
+                </div>
+
+            </section>
+
+        </main>
+
+        
+        <footer class="bg-dark text-white pt-5 pb-3">
+            <h2 class="h5 fw-bold text-warning">informacion de contacto</h2>
+
+            <p class="text-white-50 mb-2">
+                ubicacion:
+                <strong class="text-white">km 114 Carretera CA-5, Siguatepeque</strong>
+            </p>
+            <p>
+                Tel:
+                <strong>12345678</strong>
+            </p>
+            <p>
+                &copy; 2026 muebleria san miguel
+                todos los derechos reservados
+            </p>
+
+            <h3>Redes Sociales</h3>
+
+            <ul>
+                <li>
+                    <a href="https://mueblessanmiguel@carpinteria.hn">mueblessanmiguel@carpinteria.hn</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/50411223344">
+                    WhatsApp</a>
+                </li>
+            </ul>
+        </footer>
+
+            <!-- JavaScript de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
